@@ -2,6 +2,7 @@ const time = document.querySelector('.time-clock');
 const hello = document.querySelector('#hello');
 const name = document.querySelector(".name");
 const focus = document.querySelector("#focus");
+const color = document.querySelector(".actual-color");
 // const ampm = document.querySelector("#ampm");
 
 
@@ -43,10 +44,27 @@ function showTime(){
 
 
     }
+    //set color
+
     
    
     setTimeout(showTime, 1000);
 }
+
+//clock color
+function setColor(){
+    let today = new Date();
+    let hour = today.getHours();
+    let min = today.getMinutes();
+    let sec = today.getSeconds();
+    const write = "#"+hour+min+sec;
+    
+    //write color
+    color.textContent = write;
+    time.style.color="#"+hour+min+sec;
+    setTimeout(setColor, 1000);
+}
+
 
 // Get the name
 function getName(){
@@ -92,3 +110,4 @@ focus.addEventListener('keypress', function(e){
 showTime();
 getName();
 getFocus();
+setColor();
