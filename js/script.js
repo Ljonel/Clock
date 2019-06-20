@@ -25,7 +25,7 @@ function showTime(){
    
     if(hour < 15){
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'AM';
-        document.body.style.backgroundImage="url('https://ljonel.github.io/dist/img/afternoon.jpg')";
+        document.body.style.backgroundImage="url('../dist/js/afternoon.jpg')";
         hello.textContent = "Good Morning";
 
     }else if(hour < 13) {
