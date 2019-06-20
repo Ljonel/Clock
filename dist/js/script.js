@@ -30,13 +30,13 @@ function showTime(){
 
     }else if(hour < 13) {
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'<span>  PM</span>';
-        document.body.style.backgroundImage="url('../dist/img/mid.jpg')";
+        document.body.style.backgroundImage="url('https://ljonel.github.io/Clock/img/mid.jpg')";
         hello.textContent = "Good Afternoon";
 
     }
     else{
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec;
-        document.body.style.backgroundImage="url('../dist/img/night.png')"; 
+        document.body.style.backgroundImage="url('https://ljonel.github.io/Clock/img/night.png')"; 
         hello.textContent = "Good Evening";
         const quest = document.querySelector("#quest");
         quest.textContent = "What is your focus at this time?"
