@@ -23,12 +23,12 @@ function showTime(){
 
     //AM/PM
    
-    if(hour < 12){
+    if(hour < 15){
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'AM';
         document.body.style.backgroundImage="url('../dist/img/afternoon.jpg')";
         hello.textContent = "Good Morning";
 
-    }else if(hour < 18) {
+    }else if(hour < 13) {
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'<span>  PM</span>';
         document.body.style.backgroundImage="url('../dist/img/2.jpg')";
         hello.textContent = "Good Afternoon";
