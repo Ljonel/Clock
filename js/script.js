@@ -30,7 +30,7 @@ function showTime(){
 
     }else if(hour < 13) {
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'<span>  PM</span>';
-        document.body.style.backgroundImage="url('../dist/img/2.jpg')";
+        document.body.style.backgroundImage="url('../dist/img/mid.jpg')";
         hello.textContent = "Good Afternoon";
 
     }
