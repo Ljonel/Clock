@@ -25,18 +25,18 @@ function showTime(){
    
     if(hour < 12){
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'AM';
-        document.body.style.backgroundImage="url('../img/afternoon.jpg')";
+        document.body.style.backgroundImage="url('../dist/img/afternoon.jpg')";
         hello.textContent = "Good Morning";
 
     }else if(hour < 18) {
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec+'<span>  PM</span>';
-        document.body.style.backgroundImage="url('/img/2.jpg')";
+        document.body.style.backgroundImage="url('../dist/img/2.jpg')";
         hello.textContent = "Good Afternoon";
 
     }
     else{
         time.innerHTML = hour+'<span>:</span>'+min+'<span>:</span>'+sec;
-        document.body.style.backgroundImage="url('../img/night.png')"; 
+        document.body.style.backgroundImage="url('../dist/img/night.png')"; 
         hello.textContent = "Good Evening";
         const quest = document.querySelector("#quest");
         quest.textContent = "What is your focus at this time?"
